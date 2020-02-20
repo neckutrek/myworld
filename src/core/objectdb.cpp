@@ -4,7 +4,7 @@
 
 namespace netr
 {
-   
+
 static ObjectDB* s_objectDB = nullptr;
 
 ObjectDB::ObjectDB()
@@ -16,12 +16,12 @@ ObjectDB::~ObjectDB()
 ObjectDB* ObjectDB::createObjectDatabase()
 {
    assert(!s_objectDB); // ObjectDB::createObjectDatabase has been called more than once!
-   
+
    s_objectDB = new ObjectDB;
 
    return s_objectDB;
 }
-   
+
 ObjectDB* ObjectDB::getObjectDatabase()
 {
    assert(s_objectDB); // ObjectDB::createObjectDatabase has not been called!

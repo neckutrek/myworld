@@ -1,5 +1,7 @@
 #include "core/object.h"
 
+#include <algorithm>
+
 namespace netr
 {
 
@@ -41,7 +43,7 @@ void Object::addObserver(Object* observer)
 
 void Object::removeObserver(Object* observer)
 {
-   m_observers.remove_if( 
+   m_observers.remove_if(
       [&observer](Object* o) -> bool { return o == observer; }
    );
 }

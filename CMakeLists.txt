@@ -4,14 +4,16 @@ cmake_minimum_required( VERSION 2.8 )
 set( CMAKE_MODULE_PATH $ENV{CMAKE_MODULE_PATH} )
 set( CMAKE_PREFIX_PATH $ENV{CMAKE_PREFIX_PATH} )
 
-## Specify a project name
-project( NeckuNES )
+set(CMAKE_CXX_COMPILER "/opt/gcc-8.3.0/bin/g++")
 
-set( CMAKE_CXX_FLAGS "-Wpedantic -Wall -O0 -std=c++17 -g" )
+## Specify a project name
+project( myworld )
+
+set( CMAKE_CXX_FLAGS "-Wpedantic -Wall -O0 -std=c++17 -g -pthread" )
 
 ## Set the build type
 if( NOT CMAKE_BUILD_TYPE )
-  set( CMAKE_BUILD_TYPE "Release" 
+  set( CMAKE_BUILD_TYPE "Release"
        CACHE STRING "Build configuration 'Release' or 'Debug'."
        FORCE )
 endif()

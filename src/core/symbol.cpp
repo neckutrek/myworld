@@ -4,7 +4,7 @@
 
 namespace netr
 {
-   
+
 Symbol::Symbol(const std::string& string)
 : m_name(string)
 {

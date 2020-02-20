@@ -3,7 +3,7 @@
 #include <iostream>
 
 MyObject::MyObject(netr::Object* parent)
-: netr::Object(parent) 
+: netr::Object(parent)
 {}
 
 void MyObject::notify(netr::Object* aspect, netr::Object* argument)
