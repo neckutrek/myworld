@@ -8,31 +8,31 @@
 
 namespace netr
 {
-   
-//using Symbol = std::string;
 
 class ObjectDB : public Object
 {
 public:
-   ~ObjectDB();
+                                 ~ObjectDB();
 
    /**
     * Must be called only once, ownership of the database data is returned to callee.
-    * NOTE: Callee is responsible for 
+    * NOTE: Callee is responsible for
     */
-   static ObjectDB* createObjectDatabase();
+   static   ObjectDB*            createObjectDatabase();
 
-   static ObjectDB* getObjectDatabase();
+   static   ObjectDB*            getObjectDatabase();
 
-   void addObject(Object* object, const Symbol& id);
-   void addObject(Object* object, Symbol&& id);
+            void                 addObject(Object* object, const Symbol& id);
 
-   Object* getObject(const Symbol& id) const;
+            void                 addObject(Object* object, Symbol&& id);
+
+            Object*              getObject(const Symbol& id) const;
 
 private:
-   ObjectDB();
+                                 ObjectDB();
 
-   std::unordered_map<Symbol, Object*> m_map;
+            std::unordered_map<Symbol, Object*>
+                                 m_map;
 
 };
 

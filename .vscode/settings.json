@@ -3,7 +3,9 @@
       "bitset": "cpp",
       "ios": "cpp",
       "locale": "cpp",
-      "string": "cpp"
+      "string": "cpp",
+      "thread": "cpp"
    },
-   "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools"
+   "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",
+   "editor.renderWhitespace": "none"
 }

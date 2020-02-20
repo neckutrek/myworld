@@ -8,27 +8,28 @@ namespace netr
 class Object
 {
 public:
-   Object(Object* parent = nullptr);
-   
-   virtual ~Object();
+                              Object(Object* parent = nullptr);
 
-   void accept(Object* visitor);
+   virtual                    ~Object();
 
-   void addObserver(Object* observer);
+            void              accept(Object* visitor);
 
-   void removeObserver(Object* observer);
+            void              addObserver(Object* observer);
+
+            void              removeObserver(Object* observer);
 
 protected:
-   virtual void visit(Object* object);
+   virtual  void              visit(Object* object);
 
-   void stateChanged(Object* argument = nullptr, Object* aspect = nullptr);
+            void              stateChanged(Object* argument = nullptr, Object* aspect = nullptr);
 
-   virtual void notify(Object* argument = nullptr, Object* aspect = nullptr);
+   virtual  void              notify(Object* argument = nullptr, Object* aspect = nullptr);
 
 private:
-   Object* m_parent;
+            Object*           m_parent;
 
-   std::forward_list<Object*> m_observers;
+            std::forward_list<Object*>
+                              m_observers;
 
 };
 

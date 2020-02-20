@@ -13,19 +13,21 @@ namespace netr
 class Symbol : public Object
 {
 public:
-   Symbol(const std::string& string);
-   Symbol(const char* string);
+                              Symbol(const std::string& string);
 
-   bool operator==(const Symbol& other) const;
+                              Symbol(const char* string);
+
+            bool              operator==(const Symbol& other) const;
 
 private:
 
    friend struct std::hash<Symbol>;
 
-   void rehash();
+            void              rehash();
 
-   std::string m_name;
-   std::size_t m_hash;
+            std::string       m_name;
+
+            std::size_t       m_hash;
 
 };
 
