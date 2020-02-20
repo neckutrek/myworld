@@ -1,5 +1,8 @@
 #include "core/object.h"
 
+namespace netr
+{
+
 Object::Object(Object* parent)
 : m_parent(parent)
 {
@@ -55,3 +58,5 @@ void Object::notify(Object* argument, Object* aspect)
 {
    // no op
 }
+
+} // namespace netr

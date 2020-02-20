@@ -3,13 +3,13 @@
 
 #include "core/object.h"
 
-class MyVisitor : public Object
+class MyVisitor : public netr::Object
 {
 public:
-   MyVisitor(Object* parent = nullptr);
+   MyVisitor(netr::Object* parent = nullptr);
 
 protected:
-   void visit(Object* other);
+   void visit(netr::Object* other);
 
 };
 

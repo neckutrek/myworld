@@ -6,6 +6,9 @@
 
 #include <unordered_map>
 
+namespace netr
+{
+   
 //using Symbol = std::string;
 
 class ObjectDB : public Object
@@ -32,5 +35,7 @@ private:
    std::unordered_map<Symbol, Object*> m_map;
 
 };
+
+} // namespace netr
 
 #endif

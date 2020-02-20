@@ -1,12 +1,12 @@
-#include "MyObject.h"
+#include "myobject.h"
 
 #include <iostream>
 
-MyObject::MyObject(Object* parent)
-: Object(parent) 
+MyObject::MyObject(netr::Object* parent)
+: netr::Object(parent) 
 {}
 
-void MyObject::notify(Object* aspect, Object* argument)
+void MyObject::notify(netr::Object* aspect, netr::Object* argument)
 {
    std::cout << "I can see that\n";
 }

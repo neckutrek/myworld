@@ -1,11 +1,11 @@
 #include "myvisitor.h"
 #include "myobject.h"
 
-MyVisitor::MyVisitor(Object* parent)
-: Object(parent)
+MyVisitor::MyVisitor(netr::Object* parent)
+: netr::Object(parent)
 {}
 
-void MyVisitor::visit(Object* other)
+void MyVisitor::visit(netr::Object* other)
 {
    if (auto o = dynamic_cast<MyObject*>(other))
    {

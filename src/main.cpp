@@ -16,7 +16,7 @@ int main(int argc, char** argv)
 
    o2->addObserver(o1);
 
-   ObjectDB* db = ObjectDB::createObjectDatabase();
+   netr::ObjectDB* db = netr::ObjectDB::createObjectDatabase();
    db->addObject(o1, "First");
    db->addObject(o2, "Second");
 

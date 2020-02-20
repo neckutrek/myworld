@@ -2,6 +2,9 @@
 
 #include <cassert>
 
+namespace netr
+{
+   
 static ObjectDB* s_objectDB = nullptr;
 
 ObjectDB::ObjectDB()
@@ -45,3 +48,5 @@ Object* ObjectDB::getObject(const Symbol& id) const
    }
    return nullptr;
 }
+
+} // namespace netr

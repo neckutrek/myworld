@@ -7,6 +7,9 @@
 
 #include <functional>
 
+namespace netr
+{
+
 class Symbol : public Object
 {
 public:
@@ -26,9 +29,11 @@ private:
 
 };
 
-template<> struct std::hash<Symbol>
+} // namespace netr
+
+template<> struct std::hash<netr::Symbol>
 {
-   std::size_t operator()(const Symbol& s) const noexcept
+   std::size_t operator()(const netr::Symbol& s) const noexcept
    {
       return s.m_hash;
    }

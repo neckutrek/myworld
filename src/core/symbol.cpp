@@ -2,6 +2,9 @@
 
 #include <functional>
 
+namespace netr
+{
+   
 Symbol::Symbol(const std::string& string)
 : m_name(string)
 {
@@ -23,3 +26,5 @@ void Symbol::rehash()
 {
    m_hash = std::hash<std::string>{}( m_name );
 }
+
+} // namespace netr

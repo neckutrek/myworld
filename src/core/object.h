@@ -3,6 +3,8 @@
 
 #include <forward_list>
 
+namespace netr
+{
 class Object
 {
 public:
@@ -29,5 +31,7 @@ private:
    std::forward_list<Object*> m_observers;
 
 };
+
+} // namespace netr
 
 #endif

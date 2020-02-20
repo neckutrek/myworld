@@ -5,12 +5,12 @@
 
 #include <iostream>
 
-class MyObject : public Object
+class MyObject : public netr::Object
 {
 public:
-   MyObject(Object* parent = nullptr);
+   MyObject(netr::Object* parent = nullptr);
 
-   void notify(Object* aspect, Object* argument);
+   void notify(netr::Object* aspect, netr::Object* argument);
 
    inline void f() {
       std::cout << "it works!\n";
