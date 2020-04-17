@@ -4,7 +4,7 @@ cmake_minimum_required( VERSION 2.8 )
 set( CMAKE_MODULE_PATH $ENV{CMAKE_MODULE_PATH} )
 set( CMAKE_PREFIX_PATH $ENV{CMAKE_PREFIX_PATH} )
 
-set(CMAKE_CXX_COMPILER "/opt/gcc-8.3.0/bin/g++")
+#set(CMAKE_CXX_COMPILER "/opt/gcc-8.3.0/bin/g++")
 
 ## Specify a project name
 project( myworld )

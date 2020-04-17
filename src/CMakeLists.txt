@@ -13,6 +13,11 @@ set(SOURCES_MAIN
 add_executable(main ${SOURCES_CORE} ${SOURCES_MAIN})
 target_include_directories(main PRIVATE .)
 
+set(SOURCES_MAIN2
+   main2.cpp)
+add_executable(main2 ${SOURCES_CORE} ${SOURCES_MAIN2})
+target_include_directories(main2 PRIVATE .)
+
 add_executable(test_mutex ${SOURCES_CORE} test/test_mutex.cpp)
 target_include_directories(test_mutex PRIVATE .)
 
