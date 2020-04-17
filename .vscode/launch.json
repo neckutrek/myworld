@@ -8,7 +8,7 @@
          "name": "(lldb) Launch",
          "type": "cppdbg",
          "request": "launch",
-         "program": "${workspaceFolder}/bin/test_semaphore",
+         "program": "${workspaceFolder}/bin/sort",
          "args": [],
          "stopAtEntry": false,
          "cwd": "${workspaceFolder}",

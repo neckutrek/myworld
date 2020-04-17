@@ -18,3 +18,6 @@ target_include_directories(test_mutex PRIVATE .)
 
 add_executable(test_semaphore ${SOURCES_CORE} test/test_semaphore.cpp)
 target_include_directories(test_semaphore PRIVATE .)
+
+add_executable(sort test/sorting_algorithms.cpp)
+target_include_directories(sort PRIVATE .)
